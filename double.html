@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="double.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Qahiri&display=swap" rel="stylesheet">
+    <script src="text/javascript/website.js"></script>
+    <link rel="stylesheet" href="website.js">
+</head>
+
+<body>
+    <section>
+        <article id="top">
+            <div class="header">
+                <div class="logo">
+                    <h1><span>c</span>
+                        <span5>o</span5>
+                        <span1>d</span1>
+                        <span2>e</span2>
+                        <span3>r</span3>
+                    </h1>
+                </div>
+                <div class="nav" id="navbar" style="display:block;">
+                    <!---- <i class="fa fa-times" id="close" onclick="menuClose()"></i>-->
+                    <ul>
+                        <li>
+                            <a href="app.html" id="active"> <i class="fa fa-home" aria-hidden="true"></i> HOME
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about"> <i class="fa fa-child" aria-hidden="true"></i> ABOUT
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#courses" class="hello"><i class="fa fa-book" aria-hidden="true"></i>
+                             COURSES</a></li>
+
+                        <li>
+                            <a href="#contact"><i class="fa fa-address-book" aria-hidden="true"></i>
+                            CONTACT</a>
+                        </li>
+                        <li>
+                            <a href="game.html"><i class="fa fa-handshake-o" aria-hidden="true"></i> SERVICES</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <a href="second.html">
+                    <img class="login" src="data:image/jpeg;base64,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">
+                </a>
+
+                <i class="fa fa-bars" onclick="menuOpen()" id="menuBar"></i></div>
+            </div>
+            <div class="body">
+
+                <div class="image">
+                    "
+                    <img class="top" alt="phone" src="https://static.olymptrade.com/lands/GA-FX-LPL65-01-01/build/img/macbook-mb.png">
+
+                </div>
+                <div class="content">
+                    <h1>
+                        <span1><span>c</span>odding</span1> is the one of the
+                        <sapn2>best</sapn2> talent
+                    </h1>
+                    <h2>With codding you can learn the concepts and gain more knowledge</h2>
+                    <button class="button"><a href="first.html">open an acount <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    </a></button>
+                </div>
+            </div>
+        </article>
+        <section class="services">
+            <div class="heading">
+                <h1>mordern codding plateform<br>excelent Services</h1>
+            </div>
+            <div class="codes">
+                <div class="laptop">
+                    <img src="https://static.olymptrade.com/lands/common/components/platform-screen/build/img/template/laptop-black.png">
+                </div>
+                <div class="code"><img src="http://www.smallbizdaily.com/wp-content/uploads/2020/08/shutterstock_749021593-1.jpg"></div>
+                <div class="phone">
+                    <img src="https://static.olymptrade.com/lands/common/components/platform-screen/build/img/template/mobile-horizontal-black.png">
+                </div>
+                <div class="code-1"><img src="http://www.smallbizdaily.com/wp-content/uploads/2020/08/shutterstock_749021593-1.jpg"></div>
+            </div>
+        </section>
+
+        <!--Courses Details-->
+
+
+        <section class="courses" id="courses">
+            <h1>avaliable courses</h1>
+            <div class="card">
+                <a href="first.html">
+                    <div class="card-1">
+                        <h2>webb designings</h2>
+                        <img class="web" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP1N0D2LNgzgHSjnJDcwTb7NibA2HcdXLJ6w&usqp=CAU">
+                    </div>
+                </a>
+                <div class="card-1">
+                    <h2>appp designings</h2>
+                    <img class="app" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpuz5FrbOCGpQRh5k_nPp7CkOecVvFHmZNAg&usqp=CAU">
+                </div>
+                <div class="card-1">
+                    <h2>game Designings</h2>
+                    <img class="game" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXNJ493pRYtM6a15QJ-AcX-ui8se-HkwC9Hw&usqp=CAU">
+                </div>
+            </div>
+            <p>
+                Explore Coding With Fun Learning And Creativity. Enroll With , Free Demo.<br> Learn Coding From The Comfort Of Your Home At <span>coder</span>. Book Your Free Demo Now. Multiple student projects.
+            </p>
+        </section>
+
+        <!--About-->
+
+
+        <section class="about" id="about">
+            <h1>about</h1>
+            <img class="man" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVOmvqP0wuuofMn5Y1fPWKhtWejKuPTEV676Ce0r9kygy-VO4cdxOzruLVPbbTq3DiVyU&usqp=CAU">
+            <p>
+                My team is always is ready to help and serve to the student
+            </p>
+            <p1>
+                My teammates are well educated and well degree persons.
+            </p1>
+            <br>
+            <p2>
+                Our website won many awards like <span>Education fast,Education spread.....etc</span>
+            </p2>
+
+            <a href=""><i style="cursor: pointer;"class="fa fa-arrow-circle-up"></i></a>
+
+        </section>
+
+        <!---Plateform Details-->
+
+
+        <section class="plateform-details">
+            <h1>plateform details</h1>
+            <div class="card">
+                <div class="card-1">
+                    <h3>support</h3>
+                    <h4>quality services</h2>
+                        <img class="time" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_UuKi_uSItPWxlQ0pYJjm6T0xvF613p5nfg&usqp=CAU">
+                </div>
+                <div class="card-1">
+                    <h3>Ratting</h3>
+                    <img class="level" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYNXLTzm7zQyCUfB-xNogd5uAbIRe93zvp7nWlPXhWMswhpxEGk5g9e3qv6iJmaZMvF48&usqp=CAU">
+
+                </div>
+                <div class="card-1">
+                    <h3>Fees</h3>
+                    <h4>quality services</h2>
+                        <img class="time" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkbtn9B8ggAyqVDPz60PNfxNez6btdpjecwoHd0nNmIsd-KEfdO1NqNhII7_P8Zcn9NpQ&usqp=CAU">
+                </div>
+                <div class="card-1">
+                    <h3 style="position:relative;left:50px">Best</h3>
+                    <h4>Facality services</h2>
+
+                        <img class="time" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMMXNkhyqTW5dsTMlJWAMWW0rFTvvepRQHYPIzmxsXNdP_NKBKfiGO44DGad7krNd0hkQ&usqp=CAU">
+                </div>
+                <div class="card-1">
+                    <h3>Jobs</h3>
+                    <h4 style="position:relative;left:50px">Opertunitys</h4>
+                    <img class="time" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSDUoU4V4IQ_V5Q118TiM_7NsrK704fjbJw&usqp=CAU">
+                </div>
+            </div>
+        </section>
+
+        <!--Contact Details-->
+
+        <section class="contact" id="contact">
+            <div class="contact-card">
+                <img class="welcome" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVOmvqP0wuuofMn5Y1fPWKhtWejKuPTEV676Ce0r9kygy-VO4cdxOzruLVPbbTq3DiVyU&usqp=CAU">-->
+                <h1>Contact Us</h1>
+                <div class="form">
+
+                    <form>
+                        <input style="color:deeppink;" class="name " type="text " placeholder="Name : " name=" " value=""><br>
+                        <input style="color:deeppink;" class="email" type="text " placeholder="Email : " name=" " value=""><br>
+                        <br>
+                        <input style="color:deeppink;" class="message " type="text " placeholder="Message.....  " name=" " value=""><br>
+
+                        <button type="button" class="btn" onclick='touch();' name="" value="">submit</button>
+                        <p id='hello'></p>
+                    </form>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/lover_of_my_mom_dad/">
+                        <div class="icons"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                    </a>
+                    <a href="https://business.facebook.com/latest/home?nav_ref=bm_home_redirect&business_id=3044350345835026&asset_id=101801498853642">
+                        <div class="icons"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    </a>
+                    <div class="icons"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                    <div class="icons"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                </div>
+                <a href="#top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+                <div class="details">
+                    <div class="location">
+                        <p>india</p>
+                    </div>
+                    <div class="number">
+                        <p1>7993854229</p1>
+                    </div>
+                    <div class="mail">
+                        <p2>purushothamkandheri@gmail.com</p2>
+                    </div>
+                </div>
+                <div class="matter">
+                    <div class="languages">
+                        <h5>languages</h5>
+                        <a href="html">html</a>
+                        <a href="css">css</a>
+                        <a href="java script">java script</a>
+                        <a href="java">java</a>
+                        <a href="ruby">ruby</a>
+                    </div>
+                    <div class="explore">
+                        <h5>explore</h5>
+                        <a href="">our work</a>
+                        <a href="">features</a>
+                        <a href="">videos</a>
+                        <a href="">images</a>
+                        <a href="">blog</a>
+                    </div>
+                    <div class="important">
+                        <h5>important</h5>
+                        <a href="">services</a>
+                        <a href="">terms and conditions</a>
+                        <a href="">privacy</a>
+                        <a href="">faq</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="templates">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiBqCeDP1NSzQldkOxxiUHE5-bfITeDAEt7w&usqp=CAU">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>Impedit, quo enim deleniti quisquam possimus"</p>
+            </div>
+            <div class="templates">
+                <h5>hello everyone this is arjun</h5>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiBqCeDP1NSzQldkOxxiUHE5-bfITeDAEt7w&usqp=CAU">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>Impedit, quo enim deleniti quisquam possimus</p>
+            </div>
+            <div class="templates">
+                <h5>hello everyone this is arjun</h5>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiBqCeDP1NSzQldkOxxiUHE5-bfITeDAEt7w&usqp=CAU">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>Impedit, quo enim deleniti quisquam possimus</p>
+            </div>
+            <div class="templates">
+                <h5>hello everyone this is arjun</h5>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiBqCeDP1NSzQldkOxxiUHE5-bfITeDAEt7w&usqp=CAU">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>Impedit, quo enim deleniti quisquam possimus</p>
+            </div>
+            <div class="templates">
+                <h5>hello everyone this is arjun</h5>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiBqCeDP1NSzQldkOxxiUHE5-bfITeDAEt7w&usqp=CAU">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>Impedit, quo enim deleniti quisquam possimus</p>
+            </div>
+
+        </section>
+    </section>
+
+
+
+    <script>
+        let click = document.getElementById('hello');
+
+        function touch() {
+            alert('Thankyou! for leave a reply');
+        }
+    </script>
+
+</body>
+
+</html>

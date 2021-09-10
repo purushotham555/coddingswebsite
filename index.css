@@ -1,0 +1,705 @@
+                                          @import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
+                                        @import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+                                        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+                                        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fuggles&display=swap');
+                                        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fuggles&display=swap');
+                                        * {
+                                            margin: 0%;
+                                            padding: 0;
+                                            border: 0;
+                                        }
+                                        
+                                         :root {
+                                            --banner-text-color: #3E414C;
+                                            --banner-link-color: #0094FF;
+                                            --banner-bg-color: #E8E8E8;
+                                        }
+                                        
+                                         :root {
+                                            --popup-header-color: #FFFFFF;
+                                            --popup-text-color: rgba(255, 255, 255, 0.8);
+                                            --popup-btn-text-color: #FFFFFF;
+                                            --popup-bg-color: #172331;
+                                            --popup-main-color: #0094FF;
+                                        }
+                                        
+                                        body {
+                                            height: 100vh;
+                                            width: 100%;
+                                            background: var(--popup-bg-color);
+                                            padding-left: 20px;
+                                            overflow-x: hidden;
+                                            overflow-y: scroll;
+                                        }
+                                        
+                                         ::-webkit-scrollbar {
+                                            width: 5px;
+                                            height: 100vh;
+                                            color: skyblue;
+                                        }
+                                        
+                                         ::-webkit-scrollbar-track-piece {
+                                            background: linear-gradient(blue, green, orange, pink, cyan, yellow);
+                                        }
+                                        
+                                        article {
+                                            height: 120vh;
+                                            width: 100%;
+                                        }
+                                        
+                                        .logo h1 {
+                                            display: flex;
+                                            position: relative;
+                                            color: #0094FF;
+                                            background: var( --popup-bg-color);
+                                            text-transform: uppercase;
+                                            margin: 20px;
+                                            font-size: 30px;
+                                            font-weight: bold;
+                                        }
+                                        
+                                        .logo h1 span {
+                                            color: cyan;
+                                            font-size: 150px;
+                                            font-family: Qahiri;
+                                            text-transform: lowercase;
+                                        }
+                                        
+                                        .logo h1 span5 {
+                                            color: yellow;
+                                            font-size: 150px;
+                                            font-family: Qahiri;
+                                        }
+                                        
+                                        .logo h1 span1 {
+                                            color: orange;
+                                            font-size: 150px;
+                                            font-family: Qahiri;
+                                            text-transform: uppercase;
+                                        }
+                                        
+                                        .logo h1 span2 {
+                                            color: skyblue;
+                                            font-size: 150px;
+                                            font-family: Qahiri;
+                                            text-transform: uppercase;
+                                        }
+                                        
+                                        .logo h1 span3 {
+                                            color: pink;
+                                            font-size: 150px;
+                                            font-family: Qahiri;
+                                            text-transform: uppercase;
+                                        }
+                                        
+                                        .nav {
+                                            position: relative;
+                                            float: right;
+                                            right: 5rem;
+                                            bottom: 8.5rem;
+                                            display: block;
+                                        }
+                                        
+                                        .nav ul {
+                                            position: relative;
+                                            display: flex;
+                                            height: 50px;
+                                        }
+                                        
+                                        .nav ul li {
+                                            list-style: none;
+                                            align-items: center;
+                                            justify-content: center;
+                                            text-align: center;
+                                            height: 50px;
+                                            width: 170px;
+                                        }
+                                        
+                                        .nav ul li a {
+                                            text-decoration: none;
+                                            color: white;
+                                            justify-content: center;
+                                            align-items: center;
+                                            text-align: center;
+                                            padding: 10px 20px;
+                                            border-radius: 5px;
+                                            cursor: pointer;
+                                            color: deeppink;
+                                            background: black;
+                                            box-shadow: 0 0 5px 5px var(--popup-text-color);
+                                            padding: 7px 10px;
+                                        }
+                                        
+                                        .nav a {
+                                            position: relative;
+                                            top: 1.5rem;
+                                        }
+                                        
+                                        .nav ul li a:hover {
+                                            color: cyan;
+                                            font-weight: 1000;
+                                            font-style: italic;
+                                            background: var(--banner-bg-color);
+                                            box-shadow: 0 0 5px 5px var( --popup-text-color);
+                                            padding: 7px 10px;
+                                        }
+                                        
+                                        .login {
+                                            height: 50px;
+                                            width: 50px;
+                                            border-radius: 50%;
+                                            top: 5rem;
+                                            position: absolute;
+                                            float: right;
+                                            right: 0.5rem;
+                                            cursor: pointer;
+                                            border: 2px solid deeppink;
+                                            box-shadow: 0 0 10px 2px black;
+                                        }
+                                        
+                                        #close {
+                                            display: none;
+                                        }
+                                        
+                                        #menuBar {
+                                            display: none;
+                                        }
+                                        
+                                        .image .top {
+                                            height: 500px;
+                                            width: 600px;
+                                            position: absolute;
+                                            float: right;
+                                            right: 0;
+                                        }
+                                        
+                                        .content {
+                                            position: relative;
+                                            top: 2rem;
+                                        }
+                                        
+                                        .content h1 {
+                                            font-family: 'Abril', Fatface, cursive;
+                                            text-transform: capitalize;
+                                            color: var( --popup-btn-text-color);
+                                            font-size: 50px;
+                                            font-weight: 1000;
+                                            top: 5rem;
+                                            position: relative;
+                                            left: 2rem;
+                                        }
+                                        
+                                        .content h1 span1 {
+                                            color: orange;
+                                        }
+                                        
+                                        .content h1 span {
+                                            color: cyan;
+                                            font-size: 70px;
+                                            font-weight: 2000;
+                                        }
+                                        
+                                        .content h2 {
+                                            color: pink;
+                                            font-size: 35px;
+                                            position: relative;
+                                            left: 2rem;
+                                            top: 6rem;
+                                            font-family: 'Fuggles', cursive;
+                                        }
+                                        
+                                        .button {
+                                            position: relative;
+                                            top: 8rem;
+                                            padding: 10px 20px;
+                                            border: none;
+                                            left: 3.8rem;
+                                            text-transform: capitalize;
+                                            background-color: black;
+                                            color: deeppink;
+                                            font-style: bold;
+                                            cursor: pointer;
+                                            font-weight: 500;
+                                            font-size: 15px;
+                                            border-radius: 5px;
+                                            box-shadow: 0 0 5px 5px white;
+                                        }
+                                        
+                                        .button a {
+                                            text-decoration: none;
+                                            color: deeppink;
+                                        }
+                                        
+                                        .button:hover {
+                                            color: #000;
+                                            font-weight: 1000;
+                                            background: cyan;
+                                        }
+                                        
+                                        .services {
+                                            height: 150vh;
+                                            width: 100%;
+                                            background: var( --popup-bg-color);
+                                        }
+                                        
+                                        .heading h1 {
+                                            color: white;
+                                            font-size: 60px;
+                                            text-align: center;
+                                            justify-content: center;
+                                            align-items: center;
+                                            text-transform: capitalize;
+                                        }
+                                        
+                                        .top {
+                                            position: absolute;
+                                            border-radius: 50%;
+                                            box-shadow: 0 0 20px 5px transparent;
+                                            right: 5px;
+                                        }
+                                        
+                                        .codes {
+                                            position: absolute;
+                                            left: 3rem;
+                                        }
+                                        
+                                        .laptop img {
+                                            position: relative;
+                                            height: 600px;
+                                            width: 1200px;
+                                            justify-content: center;
+                                            left: 7rem;
+                                            align-items: center;
+                                            top: 2rem;
+                                        }
+                                        
+                                        .phone img {
+                                            height: 300px;
+                                            width: 500px;
+                                            position: relative;
+                                            bottom: 50rem;
+                                            background-color: blue;
+                                            border-radius: 44px;
+                                        }
+                                        
+                                        .code img {
+                                            position: relative;
+                                            top: -33.2rem;
+                                            left: 16rem;
+                                            width: 915px;
+                                            height: 500px;
+                                            border-radius: 5px;
+                                        }
+                                        
+                                        .code-1 img {
+                                            position: relative;
+                                            height: 270px;
+                                            width: 450px;
+                                            bottom: 68rem;
+                                            left: 2rem;
+                                            border-radius: 10px;
+                                        }
+                                        
+                                        .courses h1 {
+                                            color: white;
+                                            font-size: 60px;
+                                            justify-content: center;
+                                            align-items: center;
+                                            text-align: center;
+                                            text-transform: capitalize;
+                                            text-rendering: geometricPrecision;
+                                            text-shadow: 0px 10px black;
+                                        }
+                                        
+                                        .courses p {
+                                            color: white;
+                                            position: relative;
+                                            font-family: sans-serif;
+                                            font-weight: 500;
+                                            top: 10rem;
+                                            font-style: italic;
+                                            text-align: center;
+                                        }
+                                        
+                                        .courses p span {
+                                            color: red;
+                                            font-size: 20px;
+                                            font-style: bold;
+                                        }
+                                        
+                                        .card {
+                                            top: 5rem;
+                                            position: relative;
+                                            display: grid;
+                                            grid-template-columns: repeat(3, 1fr);
+                                            grid-gap: 20px;
+                                            left: 7rem;
+                                        }
+                                        
+                                        .card-1 {
+                                            height: 300px;
+                                            width: 200px;
+                                            background: white;
+                                            border-radius: 10px;
+                                            box-shadow: 0 0 10px 10px white;
+                                            cursor: pointer;
+                                        }
+                                        
+                                        .card-1 h2 {
+                                            background-color: white;
+                                            color: deeppink;
+                                            font-size: 30px;
+                                            font-family: 'Fuggles', cursive;
+                                            font-size: 2000;
+                                            text-transform: capitalize;
+                                            align-items: center;
+                                            text-align: center;
+                                            justify-content: center;
+                                            font-style: bold;
+                                            top: 16rem;
+                                            position: relative;
+                                            right: 0;
+                                            box-shadow: 0 0 10px 5px white;
+                                            cursor: pointer;
+                                            border-radius: 50px;
+                                        }
+                                        
+                                        .card-1 h2:hover {
+                                            color: pink;
+                                        }
+                                        
+                                        .card-1 .web {
+                                            height: 200px;
+                                            width: 200px;
+                                        }
+                                        
+                                        .card-1 .app {
+                                            height: 200px;
+                                            width: 200px;
+                                        }
+                                        
+                                        .card-1 .game {
+                                            height: 200px;
+                                            width: 200px;
+                                        }
+                                        
+                                        .about {
+                                            min-height: 70vh;
+                                            width: 100%;
+                                            position: relative;
+                                            top: 20rem;
+                                            justify-content: center;
+                                            align-items: center;
+                                        }
+                                        
+                                        .about .man {
+                                            height: 100px;
+                                            width: 100px;
+                                            border-radius: 50%;
+                                            position: relative;
+                                            left: 39rem;
+                                            top: 1rem;
+                                            border: 5px solid pink;
+                                        }
+                                        
+                                        .about h1 {
+                                            color: white;
+                                            font-size: 40px;
+                                            position: relative;
+                                            justify-content: center;
+                                            align-items: center;
+                                            text-align: center;
+                                            text-transform: capitalize;
+                                            text-shadow: 0px 5px black;
+                                        }
+                                        
+                                        .about p {
+                                            color: silver;
+                                            font-size: 25px;
+                                            font-weight: 500;
+                                            font-style: italic;
+                                            justify-content: center;
+                                            text-align: center;
+                                            position: relative;
+                                            top: 1rem;
+                                        }
+                                        
+                                        .about p1 {
+                                            color: silver;
+                                            font-size: 20px;
+                                            font-weight: 500;
+                                            font-style: italic;
+                                            justify-content: center;
+                                            text-align: center;
+                                            position: relative;
+                                            top: 2rem;
+                                            left: 28rem;
+                                        }
+                                        
+                                        .about p2 {
+                                            color: silver;
+                                            font-size: 18px;
+                                            font-weight: 500;
+                                            font-style: italic;
+                                            justify-content: center;
+                                            text-align: center;
+                                            position: relative;
+                                            top: 2.5rem;
+                                            left: 26rem;
+                                        }
+                                        
+                                        .about .fa-arrow-circle-up {
+                                            color: red;
+                                            font-size: 40px;
+                                            padding: 10px 0px;
+                                            position: absolute;
+                                            float: right;
+                                            right: 2rem;
+                                            bottom: 16rem;
+                                            cursor: pointer;
+                                        }
+                                        
+                                        .about .fa-arrow-circle-up:hover {
+                                            color: black;
+                                            background-color: wheat;
+                                            box-shadow: var(--banner-bg-color);
+                                            border-radius: 50%;
+                                        }
+                                        
+                                        .plateform-details {
+                                            height: 150vh;
+                                            width: 100%;
+                                            position: relative;
+                                            top: 3rem;
+                                        }
+                                        
+                                        .plateform-details h1 {
+                                            color: white;
+                                            position: relative;
+                                            justify-content: center;
+                                            text-align: center;
+                                            top: 14rem;
+                                            text-transform: capitalize;
+                                            font-size: 50px;
+                                            text-shadow: 5px 10px black;
+                                        }
+                                        
+                                        .plateform-details .card {
+                                            height: 250px;
+                                            width: 200px;
+                                            position: relative;
+                                            top: 20rem;
+                                            display: grid;
+                                            grid-template-columns: repeat(5, 1fr);
+                                            grid-gap: 70px;
+                                            left: 1.3rem;
+                                        }
+                                        
+                                        .plateform-details .card .card-1 h3 {
+                                            color: palegreen;
+                                            font-size: 30px;
+                                            font-style: italic;
+                                            top: 14rem;
+                                            left: 3rem;
+                                            position: relative;
+                                        }
+                                        
+                                        .plateform-details .card .card-1 h4 {
+                                            color: silver;
+                                            font-size: 20px;
+                                            position: relative;
+                                            top: 14.5rem;
+                                            left: 1.8rem;
+                                            text-transform: capitalize;
+                                        }
+                                        
+                                        .plateform-details .card .card-1 h4:hover {
+                                            color: cyan;
+                                        }
+                                        
+                                        .plateform-details .card .card-1 .level {
+                                            height: 200px;
+                                            width: 200px;
+                                        }
+                                        
+                                        .plateform-details .card .card-1 .time {
+                                            position: relative;
+                                            height: 200px;
+                                            width: 200px;
+                                            bottom: 3rem;
+                                        }
+                                        
+                                        .contact {
+                                            height: 100vh;
+                                            width: 100%;
+                                        }
+                                        
+                                        .contact h1 {
+                                            color: black;
+                                            font-size: 40px;
+                                            position: relative;
+                                            left: 45%;
+                                            top: 2rem;
+                                            text-shadow: 0px 5px white;
+                                        }
+                                        
+                                        .contact-card {
+                                            position: relative;
+                                            height: 500px;
+                                            width: 100%;
+                                            opacity: 100px;
+                                            bottom: 5rem;
+                                            transition: 0.5s;
+                                            right: 1.2rem;
+                                        }
+                                        
+                                        .contact-card .name {
+                                            position: absolute;
+                                            float: right;
+                                            right: 10rem;
+                                            top: 9rem;
+                                            width: 400px;
+                                            height: 30px;
+                                            border-radius: 5px;
+                                            border: none;
+                                            box-shadow: 0 0 10px 5px white;
+                                        }
+                                        
+                                        .contact-card .email {
+                                            position: absolute;
+                                            float: right;
+                                            right: 10rem;
+                                            top: 13rem;
+                                            width: 400px;
+                                            height: 30px;
+                                            border-radius: 5px;
+                                            border: none;
+                                            box-sizing: content-box;
+                                            box-shadow: 0 0 10px 5px white;
+                                        }
+                                        
+                                        .contact-card .message {
+                                            position: absolute;
+                                            float: right;
+                                            right: 10rem;
+                                            top: 18rem;
+                                            width: 400px;
+                                            height: 100px;
+                                            border-radius: 5px;
+                                            border: none;
+                                            box-shadow: 0 0 10px 5px white;
+                                            border-radius: 10px;
+                                        }
+                                        
+                                        .message::placeholder {
+                                            position: relative;
+                                            float: left;
+                                            bottom: 2rem;
+                                        }
+                                        
+                                         ::placeholder {
+                                            padding: 10px;
+                                            position: relative;
+                                            color: deepskyblue;
+                                            font-style: italic;
+                                            font-size: 15px;
+                                        }
+                                        
+                                        .btn {
+                                            color: deeppink;
+                                            background: white;
+                                            padding: 5px 5px;
+                                            position: absolute;
+                                            top: 27rem;
+                                            width: 100px;
+                                            float: right;
+                                            right: 27.5rem;
+                                            align-items: center;
+                                            text-align: center;
+                                            justify-content: center;
+                                            border-radius: 5px;
+                                            box-shadow: 0 0 5px 10px var(--popup-text-color);
+                                            cursor: pointer;
+                                            text-transform: uppercase;
+                                            outline: none;
+                                        }
+                                        
+                                        .btn:hover {
+                                            background: pink;
+                                        }
+                                        
+                                        .social-icons {
+                                            display: flex;
+                                            position: relative;
+                                            padding: 10px 50px;
+                                            margin: 10px;
+                                            width: 50%;
+                                        }
+                                        
+                                        .icons .fa-instagram {
+                                            font-size: 40px;
+                                            cursor: pointer;
+                                            color: deeppink;
+                                            position: relative;
+                                            left: 10rem;
+                                        }
+                                        
+                                        .icons .fa-instagram:hover {
+                                            color: silver;
+                                            box-shadow: 0 0 5px 5px var(--popup-text-color);
+                                            border-radius: 50%;
+                                        }
+                                        
+                                        .icons .fa-facebook {
+                                            font-size: 40px;
+                                            color: deepskyblue;
+                                            position: relative;
+                                            left: 13rem;
+                                            cursor: pointer;
+                                        }
+                                        
+                                        .icons .fa-facebook:hover {
+                                            color: silver;
+                                            box-shadow: 0 0 5px 5px var(--popup-text-color);
+                                            border-radius: 50%;
+                                        }
+                                        
+                                        .icons .fa-twitter {
+                                            font-size: 40px;
+                                            position: relative;
+                                            left: 15rem;
+                                            color: whitesmoke;
+                                            cursor: pointer;
+                                        }
+                                        
+                                        .icons .fa-twitter:hover {
+                                            color: silver;
+                                            box-shadow: 0 0 5px 5px var(--popup-text-color);
+                                            border-radius: 50%;
+                                        }
+                                        
+                                        .icons .fa-linkedin {
+                                            font-size: 40px;
+                                            position: relative;
+                                            left: 17rem;
+                                            color: blue;
+                                            cursor: pointer;
+                                        }
+                                        
+                                        .icons .fa-linkedin:hover {
+                                            color: silver;
+                                            box-shadow: 0 0 5px 5px var(--popup-text-color);
+                                            border-radius: 50%;
+                                        }
+                                        
+                                        .contact-card .fa-arrow-circle-up {
+                                            color: red;
+                                            font-size: 40px;
+                                            padding: 10px 0px;
+                                            position: absolute;
+                                            float: right;
+                                            right: 3rem;
+                                            bottom: 0rem;
+                                            cursor: pointer;
+                                            scroll-behavior: smooth;
+                                        }
